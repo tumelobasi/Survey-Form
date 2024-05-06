@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WestInc Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="heading">
+    <h1 id="title">WestInc Survey Form</h1>
+    
+  </div>
+  <div class="heading">
+    <p id="description">Thank you for taking the time to give us feedback on our performance.</p>
+  </div>
+  <div class="myform">
+    <form id="survey-form">
+  
+      <label for="name" id="name-label">Name:</label>
+      <input id="name" type="text" name="name" placeholder="Enter your name" required>
+      
+      <label for="email" id="email-label">Email:</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email" required>
+      
+      <label for="number" id="number-label">Age: </label>
+      <input id="number" type="number" name="number" placeholder="Your age" min="0" max="20" required>
+      
+      <label for="dropdown">Select your gender:</label>
+      <select id="dropdown" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      
+      <label>Do you like our service?</label>
+      <input name="recommendation" type="radio" value="Yes"> Yes
+      <input name="recommendation" type="radio" value="No"> No
+      
+      <label>What would you like to see improved?</label>
+      <input type="checkbox" name="improvement" value="communication">Communication
+      <input type="checkbox" name="improvement" value="internet">Internet Service
+      <input type="checkbox" name="improvement" value="transportation">Transportation
+      <input type="checkbox" name="improvement" value="other">Other
+      
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Please specify additional comments if you chose other"></textarea>
+      
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
